@@ -1,1 +1,1 @@
-src/validate-dir-exists.sh
+lib/validate-dir-exists.sh

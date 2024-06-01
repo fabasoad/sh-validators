@@ -1,1 +1,1 @@
-src/validate-file-exists.sh
+lib/validate-file-exists.sh
