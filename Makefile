@@ -2,7 +2,7 @@
 
 BIN ?= validate
 PREFIX ?= /usr/local
-CMDS = dir-exists enum file-exists semver
+CMDS = dir-exists enum semver
 
 current_dir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
