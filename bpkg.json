@@ -2,7 +2,7 @@
   "name": "sh-validators",
   "version": "v0.1.0",
   "description": "A set of scripts to validate inputs in GitHub Actions workflows",
-  "scripts": ["validate-dir-exists", "validate-enum", "validate-file-exists"],
+  "scripts": ["validate-dir-exists", "validate-enum", "validate-file-exists", "validate-semver"],
   "install": "make install",
   "global": "true"
 }
