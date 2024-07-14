@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
 validate_enum() {
-  param_key="$1"
-  param_val="$2"
-  enum_opts="$3,"
+  param_key="${1}"
+  param_val="${2}"
+  enum_opts="${3},"
   case ",${enum_opts}" in
     *",${param_val},"*)
       ;;
     *)
-      msg="\"${param_key}\" parameter is invalid. Possible values: $(echo "${enum_opts%,}" | sed 's/,/, /g')."
-      echo "::error title=Invalid parameter::${msg}"
+      printf "\"%s\" parameter is invalid. Possible values: %s.\n" "${param_key}" "$(echo "${enum_opts%,}" | sed 's/,/, /g')" >&2
       exit 1
       ;;
   esac
