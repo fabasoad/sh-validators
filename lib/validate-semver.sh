@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-validate_semver() {
+fabasoad_validate_semver() {
   param_key="${1}"
   param_val="${2}"
   semver_regex="^[0-9]\+\(\.[0-9]\+\)\{0,2\}\(-[0-9A-Za-z-]\+\(\.[0-9A-Za-z-]\+\)*\)\?\(\+[0-9A-Za-z-]\+\(\.[0-9A-Za-z-]\+\)*\)\?$"
@@ -12,8 +12,8 @@ validate_semver() {
 
 ## export
 if [[ ${BASH_SOURCE[0]} != $0 ]]; then
-  export -f validate_semver
+  export -f fabasoad_validate_semver
 else
-  validate_semver "${@}"
+  fabasoad_validate_semver "${@}"
   exit $?
 fi
