@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 
 validate_dir_exists() {
-  param_key="$1"
-  param_val="$2"
+  param_key="${1}"
+  param_val="${2}"
   if [ ! -d "${param_val}" ]; then
-    msg="\"${param_key}\" parameter is invalid. \"${param_val}\" is not a directory or does not exist."
-    echo "::error title=Invalid parameter::${msg}"
+    printf "\"%s\" parameter is invalid. \"%s\" is not a directory or does not exist.\n" "${param_key}" "${param_val}" >&2
     exit 1
   fi
 }

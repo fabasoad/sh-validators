@@ -1,8 +1,13 @@
 {
   "name": "sh-validators",
   "version": "v0.1.0",
-  "description": "A set of scripts to validate inputs in GitHub Actions workflows",
-  "scripts": ["validate-dir-exists", "validate-enum", "validate-semver"],
-  "install": "make install",
+  "description": "A set of scripts to validate user inputs",
+  "scripts": [
+    "fabasoad-validate-dir-exists",
+    "fabasoad-validate-enum",
+    "fabasoad-validate-file-exists",
+    "fabasoad-validate-semver"
+  ],
+  "install": "scripts/install.sh",
   "global": "true"
 }
