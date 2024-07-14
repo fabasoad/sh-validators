@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-validate_dir_exists() {
+fabasoad_validate_dir_exists() {
   param_key="${1}"
   param_val="${2}"
   if [ ! -d "${param_val}" ]; then
@@ -11,8 +11,8 @@ validate_dir_exists() {
 
 ## export
 if [[ ${BASH_SOURCE[0]} != $0 ]]; then
-  export -f validate_dir_exists
+  export -f fabasoad_validate_dir_exists
 else
-  validate_dir_exists "${@}"
+  fabasoad_validate_dir_exists "${@}"
   exit $?
 fi

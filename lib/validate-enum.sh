@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-validate_enum() {
+fabasoad_validate_enum() {
   param_key="${1}"
   param_val="${2}"
   enum_opts="${3},"
@@ -16,8 +16,8 @@ validate_enum() {
 
 ## export
 if [[ ${BASH_SOURCE[0]} != $0 ]]; then
-  export -f validate_enum
+  export -f fabasoad_validate_enum
 else
-  validate_enum "${@}"
+  fabasoad_validate_enum "${@}"
   exit $?
 fi

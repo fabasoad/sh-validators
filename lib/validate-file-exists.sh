@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-validate_file_exists() {
+fabasoad_validate_file_exists() {
   param_key="${1}"
   param_val="${2}"
   if [ ! -f "${param_val}" ]; then
@@ -11,8 +11,8 @@ validate_file_exists() {
 
 ## export
 if [[ ${BASH_SOURCE[0]} != $0 ]]; then
-  export -f validate_file_exists
+  export -f fabasoad_validate_file_exists
 else
-  validate_file_exists "${@}"
+  fabasoad_validate_file_exists "${@}"
   exit $?
 fi

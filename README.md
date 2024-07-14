@@ -1,5 +1,10 @@
 # Shell validators
 
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
+![GitHub release](https://img.shields.io/github/v/release/fabasoad/sh-validators?include_prereleases)
+![security](https://github.com/fabasoad/sh-validators/actions/workflows/security.yml/badge.svg)
+![linting](https://github.com/fabasoad/sh-validators/actions/workflows/linting.yml/badge.svg)
+
 Shell library to validate user inputs.
 
 ## Supported validators
@@ -23,7 +28,7 @@ Use script by running file:
 
 ```shell
 mkdir "this-dir-exists"
-./validate-dir-exists "dir-param" "this-dir-exists"
+./fabasoad-validate-dir-exists "dir-param" "this-dir-exists"
 echo $?
 # Output
 0
@@ -34,7 +39,7 @@ Use script by running function:
 ```shell
 . "./validate-dir-exists"
 mkdir "this-dir-exists"
-validate_dir_exists "dir-param" "this-dir-exists"
+fabasoad_validate_dir_exists "dir-param" "this-dir-exists"
 echo $?
 # Output
 0
@@ -43,7 +48,7 @@ echo $?
 Negative use case:
 
 ```shell
-./validate-dir-exists "dir-param" "this-dir-does-not-exist"
+./fabasoad-validate-dir-exists "dir-param" "this-dir-does-not-exist"
 # Output
 "dir-param" parameter is invalid. "<full-path>/this-dir-does-not-exist" is not a directory or does not exist.
 ```
@@ -52,7 +57,7 @@ If you want to redirect error message to your internal logic:
 
 ```shell
 set +e
-err_msg=$(./validate-dir-exists.sh "dir-param" "this-dir-does-not-exist" 2>&1 >/dev/null)
+err_msg=$(./fabasoad-validate-dir-exists "dir-param" "this-dir-does-not-exist" 2>&1 >/dev/null)
 if [ "$?" -ne 0 ]; then
   echo "[error] $(date +%s) $err_msg"
 fi
