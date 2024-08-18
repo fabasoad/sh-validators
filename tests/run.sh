@@ -12,4 +12,4 @@ main() {
   done
 }
 
-main $@
+main "$@"
