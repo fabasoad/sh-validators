@@ -6,8 +6,6 @@ TESTS_DIR=$(dirname $(realpath "$0"))
 ROOT_DIR=$(dirname "${TESTS_DIR}")
 LIB_DIR="${ROOT_DIR}/lib"
 
-#. "${LIB_DIR}/validate-semver.sh"
-
 declare -a MUST_MATCH=("0.0.4" "1.2.3" "10.20.30" "1.1.2-prerelease+meta"
   "1.1.2+meta" "1.1.2+meta-valid" "1.0.0-alpha" "1.0.0-beta" "1.0.0-alpha.beta"
   "1.0.0-alpha.beta.1" "1.0.0-alpha.1" "1.0.0-alpha0.valid" "1.0.0-alpha.0valid"

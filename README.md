@@ -13,6 +13,7 @@ Shell library to validate user inputs.
 2. [Validate enum](./lib/validate-enum.sh)
 3. [Validate that file exists](./lib/validate-file-exists.sh)
 4. [Validate semver](./lib/validate-semver.sh)
+5. [Validate tool installed](./lib/validate-tool-installed.sh)
 
 ## Installation
 
@@ -64,3 +65,7 @@ fi
 # Output
 [error] 1720946407 "dir-param" parameter is invalid. "<full-path>/this-dir-does-not-exist" is not a directory or does not exist.
 ```
+
+## Contributions
+
+![Alt](https://repobeats.axiom.co/api/embed/edbb31d44e161d6596d5cdd26004b9926e5b49f6.svg "Repobeats analytics image")
