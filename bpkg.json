@@ -1,12 +1,13 @@
 {
   "name": "sh-validators",
-  "version": "v0.3.3",
+  "version": "v0.3.4",
   "description": "A set of scripts to validate user inputs",
   "scripts": [
     "fabasoad-validate-dir-exists",
     "fabasoad-validate-enum",
     "fabasoad-validate-file-exists",
-    "fabasoad-validate-semver"
+    "fabasoad-validate-semver",
+    "fabasoad-validate-tool-installed"
   ],
   "install": "scripts/install.sh",
   "global": "true"
