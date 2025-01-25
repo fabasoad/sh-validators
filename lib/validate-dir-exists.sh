@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set +u
 
 FABASOAD_VALIDATORS_CONFIG_EXIT_CODE_DEFAULT=1
 
