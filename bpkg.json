@@ -1,6 +1,6 @@
 {
   "name": "sh-validators",
-  "version": "v0.3.4",
+  "version": "v0.4.0",
   "description": "A set of scripts to validate user inputs",
   "scripts": [
     "fabasoad-validate-dir-exists",

@@ -38,7 +38,7 @@ function _ok {
 echo ">> Testing valid version numbers <<"
 for var in "${MUST_MATCH[@]}"; do
   exit_code=0
-  ${LIB_DIR}/validate-semver.sh "test-value" "${var}"
+  ${LIB_DIR}/validate-semver.sh "${var}"
   exit_code=$?
   if [ "${exit_code}" -eq 0 ]; then
     MAJOR="${BASH_REMATCH[1]}"
@@ -57,7 +57,7 @@ echo ""
 echo ">> Testing invalid version numbers <<"
 for var in "${MUST_NOT_MATCH[@]}"; do
   exit_code=0
-  ${LIB_DIR}/validate-semver.sh "test-value" "${var}" 2>/dev/null
+  ${LIB_DIR}/validate-semver.sh "${var}" 2>/dev/null
   exit_code=$?
   if [ "${exit_code}" -eq 0 ]; then
     _fatal "regex matched '$var'"
