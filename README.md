@@ -40,7 +40,8 @@ The following tools have to be available on a machine prior using this library:
 bpkg install fabasoad/sh-validators
 ```
 
-More information on installation options you can find [here](https://github.com/bpkg/bpkg?tab=readme-ov-file#installing-packages).
+See [installation options](https://github.com/bpkg/bpkg?tab=readme-ov-file#installing-packages)
+for more details.
 
 ## Features
 
